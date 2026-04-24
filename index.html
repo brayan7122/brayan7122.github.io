@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para ti</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #f8f9fa;
+            --text-color: #2d3436;
+            --accent-color: #a29bfe; /* Color pastel */
+        }
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            overflow-x: hidden;
+        }
+        section {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+            text-align: center;
+        }
+        h1 { font-size: 2.5rem; font-weight: 300; margin-bottom: 1rem; }
+        p { font-size: 1.2rem; max-width: 600px; line-height: 1.6; color: #636e72; }
+        .divider { width: 50px; height: 2px; background: var(--accent-color); margin: 20px 0; }
+        .scroll-hint { font-size: 0.9rem; position: absolute; bottom: 30px; opacity: 0.6; }
+    </style>
+</head>
+<body>
+
+    <section>
+        <h1 data-aos="fade-up">Hay mensajes...</h1>
+        <p data-aos="fade-up" data-aos-delay="300">que no caben en un chat de cinco segundos.</p>
+        <div class="scroll-hint" data-aos="fade-in" data-aos-delay="800">Desliza hacia abajo ↓</div>
+    </section>
+
+    <section>
+        <div class="divider" data-aos="zoom-in"></div>
+        <h1 data-aos="fade-left">No es por el tiempo</h1>
+        <p data-aos="fade-right">sino por la claridad que traes cuando todo parece un nudo. Gracias por ser esa voz que ayuda a desenredarlo todo.</p>
+    </section>
+
+    <section style="background-color: #ffffff;">
+        <h1 data-aos="flip-up">Tu perspectiva</h1>
+        <p data-aos="fade-up">Es lo que más valoro. Que este nuevo año de vida te devuelva toda la luz y la paz que compartes de forma tan natural.</p>
+        <div class="divider" data-aos="zoom-in"></div>
+    </section>
+
+    <section>
+        <h1 data-aos="zoom-out-up" style="color: var(--accent-color);">Feliz Cumpleaños</h1>
+        <p data-aos="fade-in" data-aos-delay="500">Espero que este pequeño viaje digital te haya sacado una sonrisa.</p>
+    </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1200 }); // Velocidad de la animación
+    </script>
+</body>
+</html>
